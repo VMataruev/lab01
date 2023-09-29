@@ -1,0 +1,54 @@
+object Form1: TForm1
+  Left = 106
+  Height = 637
+  Top = 202
+  Width = 1607
+  Caption = 'Form1'
+  ClientHeight = 637
+  ClientWidth = 1607
+  DesignTimePPI = 144
+  LCLVersion = '3.0.0.1'
+  object StringGrid1: TStringGrid
+    Left = 248
+    Height = 232
+    Top = 10
+    Width = 768
+    ColCount = 40
+    RowCount = 120
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 40
+    Height = 62
+    Top = 48
+    Width = 191
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Chart1: TChart
+    Left = -16
+    Height = 720
+    Top = 256
+    Width = 1920
+    AxisList = <    
+      item
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Alignment = calBottom
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelBrush.Style = bsClear
+      end>
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    object Chart1BarSeries1: TBarSeries
+      BarBrush.Color = clRed
+    end
+  end
+end
