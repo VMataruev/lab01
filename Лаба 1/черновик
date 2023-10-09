@@ -6,23 +6,23 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, Grids,
-  StdCtrls, Buttons, TAGraph, TASources, TASeries;
+  StdCtrls, Buttons, TAGraph, TASources, TASeries, Math;
 
 type
-
   { TForm1 }
 
   TForm1 = class(TForm)
     Button1: TButton;
     Chart1: TChart;
     Chart1BarSeries1: TBarSeries;
+    Label1: TLabel;
+    ResultLabel: TLabel;
     StringGrid1: TStringGrid;
-    procedure BitBtn1Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
   private
-
+    { private declarations }
   public
-
+    { public declarations }
   end;
 
 var
@@ -36,60 +36,43 @@ implementation
 
 procedure TForm1.Button1Click(Sender: TObject);
 var
-  i, j : integer;
-  RowIndex, ColIndex: Integer;
-  StringGridValues: TStringList;
-  Product: Integer;
+  i, j: Integer;
+  Values: array of array of Integer;
+  Product: Int64;
 begin
-   Chart1BarSeries1.clear();
-   for i := 0 to 7 do
-   begin
-     for j := 0 to 4 do
-     begin
-       StringGrid1.Cells[i,j] := IntToStr(random(50)+40);
-     end;
-     Chart1BarSeries1.AddY(StrToInt(StringGrid1.Cells[i,j]),StringGrid1.Cells[i,j], clRed);
-     begin
+  // Очищаем график
+  Chart1BarSeries1.Clear;
 
-     end;
-   end;
-
-
-
-     StringGridValues := TStringList.Create;
-
-  try
-    for RowIndex := 0 to StringGrid1.RowCount - 1 do
+  // Очищаем StringGrid и заполняем его случайными числами
+  Randomize;
+  SetLength(Values, StringGrid1.RowCount, StringGrid1.ColCount); // Выделение памяти для массива
+  for i := 0 to 7 do
+  begin
+    for j := 0 to 4 do
     begin
-      for ColIndex := 0 to StringGrid1.ColCount - 1 do
-      begin
-        StringGridValues.Add(StringGrid1.Cells[ColIndex, RowIndex]);
-      end;
+      Values[i][j] := Random(50) + 40;
+      StringGrid1.Cells[j, i] := IntToStr(Values[i][j]);
     end;
 
-    // Теперь у вас есть все значения из StringGrid в StringGridValues
-
-
-
-
-
-
-  finally
-    StringGridValues.Free; // Освободите память, когда закончите использование
   end;
 
 
+  // Инициализируем Product значением 1 перед вычислениями
+  Product := 1;
 
+  // Вычисляем произведение всех чисел
+  for i := 0 to 7 do
+  begin
+    for j := 0 to 4 do
+    begin
+      Product := Product * Values[i][j];
+    end;
+  end;
 
-
-
-
-
-
+  // Выводим результат в TLabel
+  ResultLabel.Caption := 'Результат: ' + IntToStr(Round(Power(Product, 1/4)));
 end;
 
-procedure TForm1.BitBtn1Click(Sender: TObject);
-begin
-end;
+
 
 end.
