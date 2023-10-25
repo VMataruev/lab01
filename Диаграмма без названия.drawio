@@ -1,9 +1,136 @@
-<mxfile host="app.diagrams.net" modified="2023-10-25T10:48:39.862Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.61" version="22.0.8" etag="nEKNmWnB8c2goVSH6TrO" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-25T11:09:12.912Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.61" etag="Eud0wZnISRi8FJa_chNY" version="22.0.8" type="github">
   <diagram name="Страница — 1" id="meUFp0gVDDqr_ggqAOrW">
-    <mxGraphModel>
+    <mxGraphModel dx="1253" dy="669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="QOJU_980YXGelBzDdJa1-4" value="Начало" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="120" y="10" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QOJU_980YXGelBzDdJa1-4" target="QOJU_980YXGelBzDdJa1-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="110" as="sourcePoint" />
+            <mxPoint x="180" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-10" value="i, j: Integer;&#xa;  Values: array of array of Integer;&#xa;  Product: Double;" style="text;whiteSpace=wrap;strokeWidth=2;fontSize=7;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="QOJU_980YXGelBzDdJa1-10" target="QOJU_980YXGelBzDdJa1-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="160" as="sourcePoint" />
+            <mxPoint x="180" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-12" value="Очищаем график" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="120" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.468;exitY=0.997;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="QOJU_980YXGelBzDdJa1-12" target="QOJU_980YXGelBzDdJa1-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="280" as="sourcePoint" />
+            <mxPoint x="176" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-15" value="for i:= 0 to 7 do&lt;br&gt;for j:= 0 to 4 do" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="116" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QOJU_980YXGelBzDdJa1-15" target="QOJU_980YXGelBzDdJa1-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="370" as="sourcePoint" />
+            <mxPoint x="219.61538461538453" y="381.1538461538461" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="QOJU_980YXGelBzDdJa1-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="440" as="sourcePoint" />
+            <mxPoint x="176.0000000000001" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" target="QOJU_980YXGelBzDdJa1-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="176.0000000000001" y="540" as="sourcePoint" />
+            <mxPoint x="176" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-21" value="Chart1BarSeries1.AddY(Values[i][j], StringGrid1.Cells[j, i], clRed);" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=6;" vertex="1" parent="1">
+          <mxGeometry x="116" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="QOJU_980YXGelBzDdJa1-21" target="QOJU_980YXGelBzDdJa1-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="670" as="sourcePoint" />
+            <mxPoint x="176" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-23" value="Product:= 1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="116" y="660.0000000000001" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="QOJU_980YXGelBzDdJa1-23" target="QOJU_980YXGelBzDdJa1-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="750" as="sourcePoint" />
+            <mxPoint x="176" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-25" value="&lt;div style=&quot;font-size: 5px;&quot;&gt;for i := 0 to 7 do&lt;/div&gt;&lt;div style=&quot;font-size: 5px;&quot;&gt;&amp;nbsp; begin&lt;/div&gt;&lt;div style=&quot;font-size: 5px;&quot;&gt;&amp;nbsp; &amp;nbsp; for j := 0 to 4 do&lt;/div&gt;&lt;div style=&quot;font-size: 5px;&quot;&gt;&amp;nbsp; &amp;nbsp; begin&lt;/div&gt;&lt;div style=&quot;font-size: 5px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; Product := Product * Values[i][j];&lt;/div&gt;&lt;div style=&quot;font-size: 5px;&quot;&gt;&amp;nbsp; &amp;nbsp; end;&lt;/div&gt;&lt;div style=&quot;font-size: 5px;&quot;&gt;&amp;nbsp; end;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=5;" vertex="1" parent="1">
+          <mxGeometry x="116" y="750.0000000000001" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="QOJU_980YXGelBzDdJa1-25" target="QOJU_980YXGelBzDdJa1-27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="850" as="sourcePoint" />
+            <mxPoint x="180" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-27" value="ResultLabel.Caption := &#39;Результат: &#39; + IntToStr(Round(Power(Product, 1/40)))" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=5;" vertex="1" parent="1">
+          <mxGeometry x="116" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-28" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="QOJU_980YXGelBzDdJa1-27" target="QOJU_980YXGelBzDdJa1-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="950" as="sourcePoint" />
+            <mxPoint x="230" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="Chart1BarSeries2.Clear" link="Chart1BarSeries2.Clear" id="QOJU_980YXGelBzDdJa1-29">
+          <mxCell style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=8;" vertex="1" parent="1">
+            <mxGeometry x="116" y="930" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="QOJU_980YXGelBzDdJa1-30" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="QOJU_980YXGelBzDdJa1-29" target="QOJU_980YXGelBzDdJa1-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="1050" as="sourcePoint" />
+            <mxPoint x="180" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-31" value="Chart1BarSeries2.AddY(Round(Power(Product, 1/40)), &#39;Результат&#39;, clblue)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=4;" vertex="1" parent="1">
+          <mxGeometry x="116" y="1020" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-32" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QOJU_980YXGelBzDdJa1-31" target="QOJU_980YXGelBzDdJa1-34">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="1170" as="sourcePoint" />
+            <mxPoint x="170" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-34" value="Конец" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="116" y="1120" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-35" value="Values[i][j] := Random(50) + 40" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="116" y="380" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-36" value="StringGrid1.Cells[j, i] := IntToStr(Values[i][j])" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="116" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QOJU_980YXGelBzDdJa1-37" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QOJU_980YXGelBzDdJa1-36" target="QOJU_980YXGelBzDdJa1-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="520" as="sourcePoint" />
+            <mxPoint x="200" y="470" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="80" y="510" />
+              <mxPoint x="80" y="470" />
+              <mxPoint x="80" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
